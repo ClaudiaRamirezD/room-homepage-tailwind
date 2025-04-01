@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+:root{
+    --font-primary: "League Spartan", sans-serif;
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+article h2 {
+    @apply text-4xl font-bold;
+}
+
+article p {
+    @apply pt-6 font-semibold text-[var(--dark-gray)] ;
+}
+
+.controls button {
+    padding-inline: clamp(.5rem, 1.5rem, 1.5rem);
+}
