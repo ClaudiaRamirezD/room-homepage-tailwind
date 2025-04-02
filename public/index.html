@@ -58,16 +58,32 @@
       </nav>
     </div>
     <!-- Header para escritorio -->
-    <div class="lg:block absolute top-0 left-0 z-100 sm:hidden">
+    <div class="lg:block absolute top-0 left-0 z-100 hidden">
       <nav class="header__nav bg-transparent" aria-label="Main Navigation">
         <div class="header__nav-desktop flex px-14 py-12 justify-center items-center w-full">
-          <div class="flex items-center gap-8">
+          <div class="flex items-center gap-8 xl:gap-20">
               <img src="./images/logo.svg" alt="logo" class="w-18 h-auto">
-              <ul class="header__nav-list flex gap-6 font-bold items-center text-white pl-4 text-md" id="navbar-menu">
-                  <li class="header__nav-item"><a href="#" class="header__nav-link">home</a></li>
-                  <li class="header__nav-item"><a href="#" class="header__nav-link">shop</a></li>
-                  <li class="header__nav-item"><a href="#" class="header__nav-link">about</a></li>
-                  <li class="header__nav-item"><a href="#" class="header__nav-link">contact</a></li>
+              <ul class="header__nav-list flex gap-6 xl:gap-10 font-bold items-center text-white pl-4 text-md" id="navbar-menu">
+                  <li class="header__nav-item relative group">
+                    <a href="#" class="header__nav-link">home</a>
+                    <span
+                    class="absolute bottom-[-.5rem] left-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-80 transition-transform duration-300"></span>
+                  </li>
+                  <li class="header__nav-item relative group">
+                    <a href="#" class="header__nav-link">shop</a>
+                    <span
+                    class="absolute bottom-[-.5rem] left-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-80 transition-transform duration-300"></span>
+                  </li>
+                  <li class="header__nav-item relative group">
+                    <a href="#" class="header__nav-link relative group">about</a>
+                    <span
+                    class="absolute bottom-[-.5rem] left-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-80 transition-transform duration-300"></span>
+                  </li>
+                  <li class="header__nav-item relative group">
+                    <a href="#" class="header__nav-link">contact</a>
+                    <span
+                    class="absolute bottom-[-.5rem] left-0 w-full h-[2px] bg-white scale-x-0 group-hover:scale-x-80 transition-transform duration-300"></span>
+                  </li>
               </ul>
           </div>
         </div>
@@ -99,13 +115,13 @@
           <img src="images/desktop-image-hero-3.jpg" alt="Vintage-style tubular black chair with a sleek metal frame" class="w-full">
         </picture>
         <div class="controls absolute bg-black bottom-0 right-0 lg:translate-x-full flex cursor-pointer">
-          <button class="carousel-control-prev py-4 flex items-center justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer" type="button">
+          <button class="carousel-control-prev py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer" type="button">
             <span class="carousel-control-prev-icon" aria-hidden="true">
               <img src="./images/icon-angle-left.svg" alt="arrow-previous">
             </span>
             <span class="hidden">Previous</span>
           </button>
-          <button class="carousel-control-next py-4 flex items-center justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer " type="button">
+          <button class="carousel-control-next py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer " type="button">
             <span class="carousel-control-next-icon" aria-hidden="true">
               <img src="./images/icon-angle-right.svg" alt="arrow-next">
             </span>
@@ -113,7 +129,7 @@
           </button>
         </div>
       </div>
-      <div class="hero-text py-14 px-8 lg:py-18 lg:px-18 lg:w-2/5">
+      <div class="hero-text py-14 px-8 lg:py-18 lg:px-18 2xl:px-24 lg:w-2/5 2xl:flex 2xl:flex-col 2xl:justify-center">
         <article class="hero-text-1">
           <h2>Discover innovative ways to decorate</h2>
           <p class="lg:text-sm">We provide unmatched quality, comfort, and style for property owners across the country.
@@ -130,22 +146,22 @@
           <h2>Manufactured with the best materials</h2>
           <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
         </article>
-        <button class="flex justify-center items-center gap-8 lg:gap-4 pt-10 lg:pt-6">
+        <button class="flex justify-center 2xl:justify-start items-center gap-8 lg:gap-4 pt-10 lg:pt-6 cursor-pointer hover:text-[var(--dark-gray)] group">
           <p class="font-bold tracking-[1rem] lg:tracking-[.6rem]">SHOP NOW</p>
-          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg" class="group-hover:fill-[var(--dark-gray)]"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="currentColor" fill-rule="nonzero"/></svg>
         </button>
       </div>
     </section>
-    <section class="about grid lg:grid-cols-10 lg:text-sm">
-      <img src="images/image-about-dark.jpg" alt="Dark elegant modern space featuring a sleek table and designer chairs" class="w-full lg:col-span-3 lg:h-full">
-      <div class="about-text py-14 lg:py-10 px-8 lg:px-12 lg:col-span-4">
+    <section class="about grid lg:grid-cols-10 2xl:grid-cols-12 lg:text-sm">
+      <img src="images/image-about-dark.jpg" alt="Dark elegant modern space featuring a sleek table and designer chairs" class="w-full lg:col-span-3 2xl:col-span-4 lg:h-full">
+      <div class="about-text py-14 lg:py-0  px-8  lg:col-span-4 2xl:col-span-4 lg:flex flex-col justify-center">
         <h3 class="text-lg uppercase font-bold tracking-[.4rem] lg:text-base lg:tracking-[.3rem] ">About our furniture</h3>
-        <p class="pt-6 lg:pt-4 font-semibold text-[var(--dark-gray)]">Our multifunctional collection blends design and function to suit your individual taste.
+        <p class="pt-6 font-semibold text-[var(--dark-gray)]">Our multifunctional collection blends design and function to suit your individual taste.
         Make each room unique, or pick a cohesive theme that best express your interests and what
         inspires you. Find the furniture pieces you need, from traditional to contemporary styles
         or anything in between. Product specialists are available to help you create your dream space.</p>
       </div>
-      <img src="images/image-about-light.jpg" alt="Light scene with a white chair" class="w-full lg:col-span-3 lg:h-full">
+      <img src="images/image-about-light.jpg" alt="Light scene with a white chair" class="w-full lg:col-span-3 lg:h-full 2xl:col-span-4">
     </section>
   </main>
   <footer class="bg-black text-[var(--dark-gray)]  text-center">
