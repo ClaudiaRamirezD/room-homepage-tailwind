@@ -63,7 +63,7 @@
         <div class="header__nav-desktop flex px-14 py-12 justify-center items-center w-full">
           <div class="flex items-center gap-8 xl:gap-20">
               <img src="./images/logo.svg" alt="logo" class="w-18 h-auto">
-              <ul class="header__nav-list flex gap-6 xl:gap-10 font-bold items-center text-white pl-4 text-md" id="navbar-menu">
+              <ul class="header__nav-list flex gap-6 xl:gap-10 font-bold items-center text-white pl-4 text-md" id="navbar-menu-desktop">
                   <li class="header__nav-item relative group">
                     <a href="#" class="header__nav-link">home</a>
                     <span
@@ -92,6 +92,7 @@
   </header>
   <main class="flex flex-col">
     <section class="carrousel w-full  lg:flex lg:items-stretch">
+      <h2 class="sr-only">Image Carousel</h2> 
       <div class="main-img relative w-full h-full lg:w-3/5 lg:flex">
         <picture class="hero-1 h-full w-full">
           <source  media="(max-width: 1024px)" srcset="images/mobile-image-hero-1.jpg">
@@ -115,13 +116,13 @@
           <img src="images/desktop-image-hero-3.jpg" alt="Vintage-style tubular black chair with a sleek metal frame" class="w-full min-h-full object-fill" style="height: 100%;">
         </picture>
         <div class="controls absolute bg-black bottom-0 right-0 lg:translate-x-full flex cursor-pointer">
-          <button class="carousel-control-prev py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer" type="button">
+          <button class="carousel-control-prev py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer" type="button" aria-label="Previous slide">
             <span class="carousel-control-prev-icon" aria-hidden="true">
               <img src="./images/icon-angle-left.svg" alt="arrow-previous">
             </span>
             <span class="hidden">Previous</span>
           </button>
-          <button class="carousel-control-next py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer " type="button">
+          <button class="carousel-control-next py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer " type="button" aria-label="Next slide">
             <span class="carousel-control-next-icon" aria-hidden="true">
               <img src="./images/icon-angle-right.svg" alt="arrow-next">
             </span>
