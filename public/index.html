@@ -92,27 +92,27 @@
   </header>
   <main class="flex flex-col">
     <section class="carrousel w-full  lg:flex lg:items-stretch">
-      <div class="main-img relative w-full lg:w-3/5 lg:flex">
+      <div class="main-img relative w-full h-full lg:w-3/5 lg:flex">
         <picture class="hero-1 h-full w-full">
           <source  media="(max-width: 1024px)" srcset="images/mobile-image-hero-1.jpg">
           <source
                   media="(min-width: 1024px)"
                   srcset="images/desktop-image-hero-1.jpg">
-          <img src="images/desktop-image-hero-1.jpg" alt="Minimalist white wooden dining table set with white chairs and a bonsai centerpiece" class="w-full h-[100%] object-cover">
+          <img src="images/desktop-image-hero-1.jpg" alt="Minimalist white wooden dining table set with white chairs and a bonsai centerpiece" class="w-full min-h-full object-fill" style="height: 100%;">
         </picture>
         <picture class="hero-2 hidden h-full w-full">
           <source  media="(max-width: 1024px)"          srcset="images/mobile-image-hero-2.jpg">
           <source
                   media="(min-width: 1024px)"
                   srcset="images/desktop-image-hero-2.jpg">
-          <img src="images/desktop-image-hero-2.jpg" alt="Modern multi-colored chairs" class="w-full h-[100%] object-cover">
+          <img src="images/desktop-image-hero-2.jpg" alt="Modern multi-colored chairs" class="w-full min-h-full object-fill" style="height: 100%;">
         </picture>
         <picture class="hero-3 hidden h-full w-full">
           <source  media="(max-width: 1024px)"          srcset="images/mobile-image-hero-3.jpg">
           <source
                   media="(min-width: 1024px)"
                   srcset="images/desktop-image-hero-3.jpg">
-          <img src="images/desktop-image-hero-3.jpg" alt="Vintage-style tubular black chair with a sleek metal frame" class="w-full h-[100%] object-cover">
+          <img src="images/desktop-image-hero-3.jpg" alt="Vintage-style tubular black chair with a sleek metal frame" class="w-full min-h-full object-fill" style="height: 100%;">
         </picture>
         <div class="controls absolute bg-black bottom-0 right-0 lg:translate-x-full flex cursor-pointer">
           <button class="carousel-control-prev py-4 flex items-center hover:bg-[var(--very-dark-gray)] justify-center opacity-100 hover:opacity-70 active:opacity-50 focus:outline-none cursor-pointer" type="button">
